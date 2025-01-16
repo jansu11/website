@@ -26,5 +26,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-          target-folder: portfolio-site
-          token: ${{ secrets.GITHUB_TOKEN }}
