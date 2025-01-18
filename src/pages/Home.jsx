@@ -9,7 +9,7 @@ const Home = () => {
     <div className="space-y-0">
       {/* Hero Section */}
       <Section bgColor="" 
-          className="bg-[url('bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen "
+          className="bg-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen "
       >
 
 
