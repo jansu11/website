@@ -14,7 +14,7 @@ const Section = ({ children, className = "", id = "", bgColor = "bg-transparent"
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`max-h-screen  py-20 ${bgColor} ${className} `}
+      className={`  py-20 ${bgColor} ${className} `}
     >
       {children}
     </motion.section>

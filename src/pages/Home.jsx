@@ -1,18 +1,9 @@
 import { motion } from 'framer-motion';
 import { useEffect,useState } from 'react';
 import Section from '../components/Section';
-import Card from '../components/Project/Card';
+import Project from '../components/Project'
 
 const Home = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(()=> {
-    fetch("/projects.json")
-    .then(response => response.json())
-    .then((data) => setProjects(data));
-
-  }, [])
-
 
   return (
     <div className="space-y-0">
@@ -57,19 +48,17 @@ const Home = () => {
       </Section>
       
       {/* Projects Preview Section */}
+
+           {/* Projects Preview Section */}
       <Section bgColor="bg-gray-100 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Featured Projects
           </h2>
-          <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-6">
-            {projects.map((project) => (
-              <Card key={project.id} project={project}/>
-            ))}
-          </div>
+          
+          <Project></Project>
         </div>
       </Section>
-
 
       {/* Skills Section */}
       <Section bgColor="bg-white dark:bg-gray-800">
