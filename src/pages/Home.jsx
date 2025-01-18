@@ -51,9 +51,9 @@ const Home = () => {
       {/* Projects Preview Section */}
 
            {/* Projects Preview Section */}
-      <Section bgColor="bg-gray-100 dark:bg-gray-900">
+      <Section bgColor="bg-gray-100 bg-transparent">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
             Featured Projects
           </h2>
           
@@ -62,21 +62,21 @@ const Home = () => {
       </Section>
 
       {/* Skills Section */}
-      <Section bgColor="bg-white dark:bg-gray-800">
+      <Section bgColor="bg-primary dark:bg-gray-800">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div 
-              className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg"
+              className="bg-transparent dark:bg-gray-700 p-6 rounded-lg shadow-lg"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-secondary dark:text-white mb-4">
                 Core Skills
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-2 text-gray-300 dark:text-gray-300">
                 <li>• Python & Data Processing</li>
                 <li>• SQL & Database Design</li>
                 <li>• ETL Pipeline Development</li>
@@ -85,14 +85,14 @@ const Home = () => {
             </motion.div>
 
             <motion.div 
-              className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg"
+              className="bg-transparent dark:bg-gray-700 p-6 rounded-lg shadow-lg"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-secondary dark:text-white mb-4">
                 Technologies
               </h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-2 text-gray-300 dark:text-gray-300">
                 <li>• Apache Airflow</li>
                 <li>• PostgreSQL</li>
                 <li>• AWS Services</li>
@@ -104,9 +104,9 @@ const Home = () => {
       </Section>
 
       {/* Contact Preview Section */}
-      <Section bgColor="bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800">
+      <Section bgColor="bg-primary dark:from-gray-900 dark:to-gray-800">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+          <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8">
             Let's Connect
           </h2>
           <motion.div
@@ -116,7 +116,7 @@ const Home = () => {
           >
             <a
               href="#contact"
-              className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-8 py-3 bg-transparent  border-2 border-btgold text-white rounded-lg hover:bg-gray-800 transition-colors"
             >
               Get In Touch
             </a>

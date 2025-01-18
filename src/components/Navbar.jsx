@@ -104,7 +104,7 @@ const navigation = [
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-secondary dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+              className="p-2 rounded-lg text-secondary dark:text-gray-300 hover:bg-gray-700 hover:text-gray-50 dark:hover:bg-gray-700 transition-all duration-300"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -125,7 +125,8 @@ const navigation = [
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center space-x-3 px-4 py-3 text-secondary dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all duration-300"
+                  className="flex items-center space-x-3 px-4 py-3 text-secondary dark:text-gray-300 hover:bg-gray-800 
+                  hover:text-gray-300 dark:hover:bg-gray-700 rounded-lg transition-all duration-300"
                 >
                   <Icon className="w-5 h-5" />
                   <span>{item.name}</span>
