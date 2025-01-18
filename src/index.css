@@ -1,3 +1,4 @@
+@import './fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +13,7 @@ html {
 
 body {
   @apply bg-primary dark:bg-gray-900;
+  @apply font-neuropol;
 }
 
 .group:hover .absolute::before {

@@ -70,9 +70,9 @@ const navigation = [
 
 
   return (
-    <nav className="fixed top-0 left-0 right-0   dark:bg-gray-800/80 backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
+    <nav className="fixed top-0 left-0 right-0 py-5  dark:bg-gray-800/80 backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-around align-middle h-20">
           <div className="flex items-center">
             <Link to="/" className="text-xl font-bold text-btgold dark:text-white">
               SUJAN BOHORA

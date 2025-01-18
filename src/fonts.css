@@ -1,0 +1,7 @@
+/* src/fonts.css */
+@font-face {
+  font-family: 'Neuropol-Regular';
+  src: url('/neuropol.regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

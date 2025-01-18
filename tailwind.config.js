@@ -14,6 +14,9 @@ export default {
         supporting1: '#C5C6C7',
         supporting2: '#45A29E',
         btgold: '#f7cd6f'
+      },
+      fontFamily:{
+        neuropol: ['"Neuropol-Regular"','sans-serif']
       }
     },
 

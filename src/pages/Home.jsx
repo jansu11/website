@@ -9,7 +9,7 @@ const Home = () => {
     <div className="space-y-0">
       {/* Hero Section */}
       <Section bgColor="" 
-          className="bg-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen "
+          className="bg-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
       >
 
 
@@ -36,7 +36,8 @@ const Home = () => {
           </motion.p>
           <div className='flex items-start justify-center'>
             <button
-            className="px-6 py-3 bg-btgold hover:bg-primary hover:text-secondary text-gray-800 font-semibold rounded shadow-lg transition-all duration-300"
+            className="px-6 py-3  bg-btgold hover:bg-primary hover:text-secondary
+             text-gray-200 font-semibold rounded-full bg-transparent border-4  border-btgold shadow-lg transition-all duration-300"
             onClick={() => alert("Hello! Thanks for stopping by.")}
             >
             Say Hi
