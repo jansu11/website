@@ -6,7 +6,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        primary: '#2a292e',
+        secondary: '#66FCF1',
+        accent: '#1F2833',
+        supporting1: '#C5C6C7',
+        supporting2: '#45A29E',
+        btgold: '#f7cd6f'
+      }
+    },
+
   },
   darkMode: 'class',
   plugins: [],

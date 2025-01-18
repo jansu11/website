@@ -11,5 +11,16 @@ html {
 }
 
 body {
-  @apply bg-gray-50 dark:bg-gray-900;
+  @apply bg-primary dark:bg-gray-900;
+}
+
+.group:hover .absolute::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background-color: inherit;
 }

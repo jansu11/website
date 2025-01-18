@@ -17,13 +17,16 @@ const Home = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <Section bgColor="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800" 
+      <Section bgColor="" 
+          className="bg-[url('bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen "
       >
 
-        <div className="h-screen grid grid-rows-3 max-w-4xl mx-auto my-4 py-3 text-center">
+
+
+        <div className="min-h-screen grid grid-rows-3 max-w-4xl mx-auto my-4 py-3 text-center">
           <div className='flex items-end justify-center'>
             <motion.h1 
-              className="text-5xl font-bold text-gray-900 dark:text-white mb-6"
+              className="text-5xl font-bold text-secondary dark:text-white mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -33,7 +36,7 @@ const Home = () => {
 
           </div>
           <motion.p 
-            className="text-xl text-gray-600 dark:text-gray-300"
+            className="text-xl text-supporting1 dark:text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -42,7 +45,7 @@ const Home = () => {
           </motion.p>
           <div className='flex items-start justify-center'>
             <button
-            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-lg transition-all duration-300"
+            className="px-6 py-3 bg-btgold hover:bg-primary hover:text-secondary text-gray-800 font-semibold rounded shadow-lg transition-all duration-300"
             onClick={() => alert("Hello! Thanks for stopping by.")}
             >
             Say Hi

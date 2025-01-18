@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { 
+  Home,
+  FolderKanban,
+  Code2,
+  Briefcase,
+  Mail,
+  Menu,
+  X
+} from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,50 +35,81 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'Experience', href: '/experience' },
-    { name: 'Contact', href: '/contact' },
+const navigation = [
+    { 
+      name: 'Home', 
+      href: '/', 
+      icon: Home,
+      tooltip: 'Home'
+    },
+    { 
+      name: 'Projects', 
+      href: '/projects', 
+      icon: FolderKanban,
+      tooltip: 'Projects'
+    },
+    { 
+      name: 'Skills', 
+      href: '/skills', 
+      icon: Code2,
+      tooltip: 'Skills'
+    },
+    { 
+      name: 'Experience', 
+      href: '/experience', 
+      icon: Briefcase,
+      tooltip: 'Experience'
+    },
+    { 
+      name: 'Contact', 
+      href: '/contact', 
+      icon: Mail,
+      tooltip: 'Contact'
+    },
   ];
 
+
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-lg z-50 transition-all duration-300">
-      {/* Rest of the navbar code remains the same */}
+    <nav className="fixed top-0 left-0 right-0   dark:bg-gray-800/80 backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
-          <div className="flex">
-            <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-gray-800 dark:text-white">
-                Your Name
-              </span>
+          <div className="flex items-center">
+            <Link to="/" className="text-xl font-bold text-btgold dark:text-white">
+              SUJAN BOHORA
             </Link>
           </div>
           
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-4">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="px-3 py-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center space-x-1">
+            {navigation.map((item) => {
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="group relative p-3 rounded-lg text-secondary dark:text-gray-300 hover:bg-gray-500 dark:hover:bg-gray-900 transition-all duration-300"
+                >
+                  <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+                  
+                  {/* Tooltip */}
+                  <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 px-3 py-1 bg-gray-900 dark:bg-gray-700 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    {item.tooltip}
+                  </span>
+                </Link>
+              );
+            })}
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 dark:text-gray-300"
+              className="p-2 rounded-lg text-secondary dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
             >
               {isOpen ? (
-                <XMarkIcon className="h-6 w-6" />
+                <X className="w-6 h-6" />
               ) : (
-                <Bars3Icon className="h-6 w-6" />
+                <Menu className="w-6 h-6" />
               )}
             </button>
           </div>
@@ -77,17 +117,21 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className="block px-3 py-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="md:hidden py-4">
+            {navigation.map((item) => {
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center space-x-3 px-4 py-3 text-secondary dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all duration-300"
+                >
+                  <Icon className="w-5 h-5" />
+                  <span>{item.name}</span>
+                </Link>
+              );
+            })}
           </div>
         )}
       </div>
