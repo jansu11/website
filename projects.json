@@ -4,7 +4,7 @@
     "title": "Project One",
     "tools": ["React", "Tailwind CSS", "Node.js"],
     "description": "This is a brief description of Project One.",
-    "images": ["/images/project1-img1.jpg", "/images/project1-img2.jpg"],
+    "images": ["/images/bg2.jpg", "/images/bg2.jpg"],
     "docsLink": "https://link-to-project-one-docs.com"
   },
   {
