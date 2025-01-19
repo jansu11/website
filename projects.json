@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Project One",
-    "tools": ["React", "Tailwind CSS", "Node.js"],
-    "description": "This is a brief description of Project One.",
-    "images": ["/images/bg2.jpg", "/images/bg2.jpg"],
+    "title": "TRADETREND AI",
+    "tools": ["Python", "React", "Node.js","MongoDB","PostgreSQL"],
+    "description": "Uses LSTM Model to predict the trend of 200+ equities traded publicly in Nepal Stock Exchange.",
+    "images": ["/images/tradetrend/graph.png", "/images/tradetrend/data.png","/images/tradetrend/light.png"],
     "docsLink": "https://link-to-project-one-docs.com"
   },
   {
