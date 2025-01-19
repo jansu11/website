@@ -16,7 +16,8 @@ export default {
         btgold: '#f7cd6f'
       },
       fontFamily:{
-        neuropol: ['"Neuropol-Regular"','sans-serif']
+        neuropol: ['"Neuropol-Regular"','sans-serif'],
+        robotoMono: ['"Roboto Mono"','monospace']
       }
     },
 

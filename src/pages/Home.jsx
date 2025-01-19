@@ -63,7 +63,7 @@ const Home = () => {
 
       {/* Skills Section */}
       <Section bgColor="bg-primary dark:bg-gray-800 ">
-        <div className="min-w-full ">
+        <div className="lg:w-3/5 mx-auto">
           <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
             Technical Skills
           </h2>
