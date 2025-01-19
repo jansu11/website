@@ -18,13 +18,14 @@ const Card = ({project ,key}) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay:  0.1 }}
             >
-            <div className="flex flex-col md:flex-row bg-transparent dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full md:w-3/4 mx-auto">
+            <div className="flex flex-col  md:flex-row   dark:bg-gray-800  overflow-hidden min-h-96 min-w-full md:w-3/4 ">
+
                 {/* Left Side - Image Slider */}
-                <div className="w-full md:w-1/2 relative">
+                <div className=" md:w-1/2 relative  mx-3 " >
                     <img
                     src={project.images[currentImage]}
                     alt={`Project preview ${currentImage + 1}`}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-96 p-2 rounded-xl shadow-lg  object-cover"
                     />
                     {/* Dots for navigation */}
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
@@ -32,7 +33,7 @@ const Card = ({project ,key}) => {
                         <button
                         key={index}
                         onClick={() => handleDotClick(index)}
-                        className={`w-3 h-3 rounded-full ${
+                        className={`w-5 h-5 rounded-full ${
                             currentImage === index
                             ? "bg-btgold"
                             : "bg-gray-300 dark:bg-gray-600"
@@ -43,8 +44,8 @@ const Card = ({project ,key}) => {
                 </div>
 
                 {/* Right Side - Project Details */}
-                <div className="w-full md:w-1/2 p-6">
-                    <h2 className="text-xl font-bold text-secondary dark:text-white mb-2">
+                <div className="w-full md:w-1/2 p-6 min-h-full flex flex-col items-center">
+                    <h2 className="text-lg font-bold text-secondary dark:text-white mb-2">
                     {project.title}
                     </h2>
                     <p className="text-gray-300 dark:text-gray-400 text-sm mb-4">
@@ -57,9 +58,9 @@ const Card = ({project ,key}) => {
                     href={project.docsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-4 py-2 bg-transparent border-2 border-btgold text-white text-sm font-semibold  rounded shadow hover:bg-gray-800 hover:text-btgold hover:border-2  hover:border-gray-300 transition-colors duration-300"
+                    className="inline-block align-bottom px-4 py-2  bg-transparent border-2 border-btgold text-white text-sm   rounded shadow hover:bg-gray-800 hover:text-btgold hover:border-2  hover:border-gray-300 transition-colors duration-300"
                     >
-                    View Documentation
+                    Read Docs
                     </a>
                 </div>
             </div>

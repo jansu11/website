@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-      <footer className="bg-primary dark:bg-gray-800 shadow-lg mt-12">
+      <footer className="bg-primary dark:bg-gray-800  shadow-lg mt-12  backdrop-blur-xl border-t border-btgold rounded-lg ">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-secondary dark:text-gray-300">

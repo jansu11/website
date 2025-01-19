@@ -17,7 +17,7 @@ const Projects = () => {
       {/* Projects Preview Section */}
 
       return (
-          <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-6" >
+          <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-6 w-full" >
             {projects.map((project) => (
               <Card key={project.id} project={project}/>
             ))}

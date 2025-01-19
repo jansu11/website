@@ -52,7 +52,7 @@ const Home = () => {
 
            {/* Projects Preview Section */}
       <Section bgColor="bg-gray-100 bg-transparent">
-        <div className="max-w-4xl mx-auto">
+        <div className=" ">
           <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
             Featured Projects
           </h2>
