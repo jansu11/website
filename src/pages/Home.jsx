@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect,useState } from 'react';
 import Section from '../components/Section';
 import Project from '../components/Project'
-
+import SkillsSection from '../components/SkillsSection';
 const Home = () => {
 
   return (
@@ -62,44 +62,21 @@ const Home = () => {
       </Section>
 
       {/* Skills Section */}
-      <Section bgColor="bg-primary dark:bg-gray-800">
-        <div className="max-w-4xl mx-auto">
+      <Section bgColor="bg-primary dark:bg-gray-800 ">
+        <div className="min-w-full ">
           <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
             Technical Skills
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div 
-              className="bg-transparent dark:bg-gray-700 p-6 rounded-lg shadow-lg"
+              className="bg-primary dark:bg-gray-700  rounded-lg shadow-lg m-0 p-0"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <h3 className="text-2xl font-bold text-secondary dark:text-white mb-4">
-                Core Skills
-              </h3>
-              <ul className="space-y-2 text-gray-300 dark:text-gray-300">
-                <li>• Python & Data Processing</li>
-                <li>• SQL & Database Design</li>
-                <li>• ETL Pipeline Development</li>
-                <li>• React & Web Development</li>
-              </ul>
+              <SkillsSection/>
+
+
             </motion.div>
 
-            <motion.div 
-              className="bg-transparent dark:bg-gray-700 p-6 rounded-lg shadow-lg"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <h3 className="text-2xl font-bold text-secondary dark:text-white mb-4">
-                Technologies
-              </h3>
-              <ul className="space-y-2 text-gray-300 dark:text-gray-300">
-                <li>• Apache Airflow</li>
-                <li>• PostgreSQL</li>
-                <li>• AWS Services</li>
-                <li>• Docker & Kubernetes</li>
-              </ul>
-            </motion.div>
-          </div>
         </div>
       </Section>
 

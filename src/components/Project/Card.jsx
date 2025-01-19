@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 import { useState } from 'react';
 import TechLogo from '../TechLogo';
 
-const Card = ({project ,key}) => {
+const Card = ({project}) => {
 
         const [currentImage, setCurrentImage] = useState(0);
 
