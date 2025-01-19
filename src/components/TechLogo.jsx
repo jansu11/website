@@ -1,6 +1,6 @@
 import { div } from 'framer-motion/client'
-import { FaPython, FaReact, FaNodeJs, FaGithub, FaDatabase , FaDocker } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb, SiPostgresql,SiApachespark,SiApachecassandra , SiApachekafka, SiScala} from 'react-icons/si'
+import { FaPython, FaReact, FaNodeJs, FaGithub, FaDatabase , FaDocker,FaLinkedin } from 'react-icons/fa'
+import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb,SiGmail ,SiPostgresql,SiApachespark,SiApachecassandra , SiApachekafka, SiScala} from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 
 // Icon mapping object
@@ -20,7 +20,9 @@ const techIcons = {
   'Spark' : SiApachespark,
   'Cassandra' : SiApachecassandra,
   'Kafka' : SiApachekafka,
-  'Scala' : SiScala
+  'Scala' : SiScala,
+  'LinkedIn' : FaLinkedin, 
+  'Email' :  SiGmail
 
 }
 
@@ -33,7 +35,7 @@ const TechLogo = ({ name, className = "w-6 h-6" }) => {
        <div className="relative group inline-block">
       <IconComponent className={className} aria-label={name} />
       {/* Tooltip */}
-      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100  transition-opacity duration-200">
         <div className="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-2 py-1 rounded text-xs whitespace-nowrap shadow-lg">
           {name}
         </div>

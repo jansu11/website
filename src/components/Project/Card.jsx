@@ -54,11 +54,11 @@ const Card = ({project}) => {
                     </p>
                     <p className="text-gray-300 dark:text-gray-400  text-left text-sm pb-4 ">
                         <strong>Tools Used:</strong>
-                        <div className='flex  min-w-full'>
+                        <div className='flex  min-w-full '>
                         {
                             project.tools.map((tech) => (
-                                <div key={tech} className='  text-btgold p-4'>
-                                    <TechLogo name={tech}/>
+                                <div key={tech} className='  text-btgold p-4 '>
+                                    <TechLogo name={tech} className=' h-6 w-6 hover:h-10 hover:w-10 transition-all duration-300'/>
 
                                 </div>
 
@@ -71,7 +71,7 @@ const Card = ({project}) => {
                     href={project.docsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block align-bottom px-4 py-2  bg-transparent border-2 border-btgold text-white text-sm   rounded shadow hover:bg-gray-800 hover:text-btgold hover:border-2  hover:border-gray-300 transition-colors duration-300"
+                    className="inline-block align-center px-4 py-2  bg-transparent border-2 border-btgold text-white text-sm   rounded shadow hover:bg-gray-800 hover:text-btgold hover:border-2  hover:border-gray-300 transition-colors duration-300"
                     >
                     Read Docs
                     </a>
