@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion' 
 import { useState } from 'react';
+import TechLogo from '../TechLogo';
 
 const Card = ({project ,key}) => {
 
@@ -44,15 +45,27 @@ const Card = ({project ,key}) => {
                 </div>
 
                 {/* Right Side - Project Details */}
-                <div className="w-full md:w-1/2 p-6 min-h-full flex flex-col items-center">
+                <div className="w-full md:w-1/2 p-6 min-h-full flex flex-col  items-start justify-center ">
                     <h2 className="text-lg font-bold text-secondary dark:text-white mb-2">
                     {project.title}
                     </h2>
-                    <p className="text-gray-300 dark:text-gray-400 text-sm mb-4">
-                    <strong>Tools Used:</strong> {project.tools.join(", ")}
-                    </p>
-                    <p className="text-gray-300 dark:text-gray-400 text-sm mb-4">
+                    <p className="text-gray-300 dark:text-gray-400 text-sm mb-4 pb-2 ">
                     {project.description}
+                    </p>
+                    <p className="text-gray-300 dark:text-gray-400  text-left text-sm pb-4 ">
+                        <strong>Tools Used:</strong>
+                        <div className='flex  min-w-full'>
+                        {
+                            project.tools.map((tech) => (
+                                <div key={tech} className='  text-btgold p-4'>
+                                    <TechLogo name={tech}/>
+
+                                </div>
+
+                            ))
+                        }
+
+                        </div>
                     </p>
                     <a
                     href={project.docsLink}
