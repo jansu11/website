@@ -9,18 +9,18 @@
   },
   {
     "id": 2,
-    "title": "Project Two",
-    "tools": ["Vue", "Bootstrap", "Django"],
-    "description": "This is a brief description of Project Two.",
+    "title": "OrderBook Viz",
+    "tools": ["Python", "Scala", "Spark","Kafka","Cassandra","Docker"],
+    "description": "A realtime Order Book visualization of equity traded on NEPSE ",
     "images": ["/images/project2-img1.jpg", "/images/project2-img2.jpg"],
     "docsLink": "https://link-to-project-two-docs.com"
   },
 
   {
     "id": 3,
-    "title": "Project Two",
-    "tools": ["Vue", "Bootstrap", "Django"],
-    "description": "This is a brief description of Project Two.",
+    "title": "BlogNation",
+    "tools": ["React", "Node.js", "MongoDB"],
+    "description": "A blog Site",
     "images": ["/images/project2-img1.jpg", "/images/project2-img2.jpg"],
     "docsLink": "https://link-to-project-two-docs.com"
   }
