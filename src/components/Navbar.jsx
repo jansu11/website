@@ -70,11 +70,11 @@ const navigation = [
 
 
   return (
-    <nav className="fixed top-0 left-0 right-0    backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
+    <nav className="dark:fixed top-0 left-0 right-0 py-5   backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-around align-middle h-20">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold dark:text-btgold-dark text-btgold-dark">
+            <Link to="/" className="text-xl font-bold dark:text-btgold-dark text-accent-light">
               SUJAN BOHORA
             </Link>
           </div>
@@ -87,9 +87,9 @@ const navigation = [
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="group relative p-3 rounded-lg text-secondary-dark   transition-all duration-300"
+                  className="group relative p-3 rounded-lg dark:text-secondary-dark   transition-all duration-300"
                 >
-                  <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-150" />
+                  <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-150 " />
                   
                   {/* Tooltip */}
                   <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 px-3 py-1 bg-gray-900  text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
@@ -104,7 +104,7 @@ const navigation = [
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-secondary-dark dark:text-gray-300 hover:bg-gray-700 hover:text-gray-50 dark:hover:bg-gray-700 transition-all duration-300"
+              className="p-2 rounded-lg text-accent-light dark:text-gray-300 hover:bg-gray-700 hover:text-gray-50 dark:hover:bg-gray-700 transition-all duration-300"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -125,8 +125,8 @@ const navigation = [
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center space-x-3 px-4 py-3 dark:text-secondary-dark text-secondary-dark  hover:bg-gray-800 
-                  hover:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-gray-300 rounded-lg transition-all duration-300"
+                  className="flex items-center space-x-3 px-4 py-3 dark:text-secondary-dark text-accent-light hover:bg-gray-800 
+                  hover:text-gray-300 dark:hover:bg-gray-700 rounded-lg transition-all duration-300 " 
                 >
                   <Icon className="w-5 h-5" />
                   <span>{item.name}</span>
