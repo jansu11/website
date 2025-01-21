@@ -7,18 +7,18 @@ import TechLogo from '../components/TechLogo';
 const Home = () => {
 
   return (
-    <div className="space-y-0">
+    <div className="max-w-full">
       {/* Hero Section */}
       <Section bgColor="" 
-          className="bg-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
+          className=" min-w-full max-h-[90vh] bg-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
       >
 
 
 
-        <div className="min-h-screen grid grid-rows-3 max-w-4xl mx-auto my-4 py-3 text-center">
+        <div className="min-h-full grid grid-rows-3 max-w-4xl mx-auto my-4 py-3 text-center">
           <div className='flex items-end justify-center'>
             <motion.h1 
-              className="text-5xl font-bold text-secondary dark:text-white mb-6"
+              className="text-5xl font-bold dark:text-secondary-dark text-secondary-dark mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -28,7 +28,7 @@ const Home = () => {
 
           </div>
           <motion.p 
-            className="text-xl text-supporting1 dark:text-gray-300"
+            className="text-xl text-supporting1 dark:text-gray-300 text-gray-400"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -37,8 +37,8 @@ const Home = () => {
           </motion.p>
           <div className='flex items-start justify-center'>
             <button
-            className="px-6 py-3  bg-btgold hover:bg-primary hover:text-secondary
-             text-gray-200 font-semibold rounded-full bg-transparent border-4  border-btgold shadow-lg transition-all duration-300"
+            className="px-6 py-3   hover:bg-primary hover:text-secondary-dark
+             text-gray-200 font-semibold rounded-full bg-transparent border-4  border-btgold-dark shadow-lg transition-all duration-300"
             onClick={() => alert("Hello! Thanks for stopping by.")}
             >
             Say Hi
@@ -54,7 +54,7 @@ const Home = () => {
            {/* Projects Preview Section */}
       <Section bgColor="bg-gray-100 bg-transparent">
         <div className=" ">
-          <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
+          <h2 className="text-3xl uppercase tracking-wider font-bold text-accent-light dark:text-white mb-8 text-center pb-16">
             Featured Projects
           </h2>
           
@@ -63,13 +63,13 @@ const Home = () => {
       </Section>
 
       {/* Skills Section */}
-      <Section bgColor="bg-primary dark:bg-gray-800 ">
+      <Section bgColor="bg-transparent dark:bg-primary-dark ">
         <div className="lg:w-3/5 mx-auto">
           <h2 className="text-3xl font-bold text-gray-300 dark:text-white mb-8 text-center">
             Technical Skills
           </h2>
             <motion.div 
-              className="bg-primary dark:bg-gray-700  rounded-lg shadow-lg m-0 p-0"
+              className="dark:bg-primary-dark bg-transparent  rounded-lg shadow-lg m-0 p-0"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >

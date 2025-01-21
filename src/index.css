@@ -12,9 +12,12 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
+@layer base {
+
 body {
-  @apply bg-primary dark:bg-gray-900;
+  @apply dark:bg-primary ;
   @apply font-robotoMono;
+}
 }
 
 .group:hover .absolute::before {

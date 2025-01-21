@@ -6,16 +6,16 @@ const SkillCard = ({skill }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-transparent rounded-lg shadow-md p-5 transition-all duration-300 hover:shadow-lg m-5 ">
+    <div className="dark:bg-transparent rounded-lg shadow-md p-5 transition-all duration-300 hover:shadow-lg m-5 ">
       {/* Header Section */}
       <div className="flex items-start justify-between">
         <div className="mx-2 px-2">
-          <h3 className="text-sm font-bold text-secondary">{skill.title}</h3>
-          <p className="text-sm text-gray-300 mt-4 pt-4">{skill.experience}</p>
+          <h3 className="text-sm font-bold dark:text-secondary-dark">{skill.title}</h3>
+          <p className="text-sm dark:text-gray-300 mt-4 pt-4">{skill.experience}</p>
         </div>
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
-          className="px-5 text-btgold   hover:bg-transparent hover:text-gray-300  hover:border-btgold hover:border rounded-full transition-all duration-300"
+          className="px-5 dark:text-btgold-dark   dark:hover:bg-transparent hover:text-gray-300  hover:border-btgold hover:border rounded-full transition-all duration-300"
           aria-label={isExpanded ? "Collapse" : "Expand"}
         >
           {isExpanded ? <ChevronUp /> : <ChevronDown />}

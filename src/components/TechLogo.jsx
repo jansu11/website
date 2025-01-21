@@ -36,7 +36,7 @@ const TechLogo = ({ name, className = "w-6 h-6" }) => {
       <IconComponent className={className} aria-label={name} />
       {/* Tooltip */}
       <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100  transition-opacity duration-200">
-        <div className="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-2 py-1 rounded text-xs whitespace-nowrap shadow-lg">
+        <div className="dark:bg-gray-200 bg-gray-700 dark:text-gray-900 text-white px-2 py-1 rounded text-xs whitespace-nowrap shadow-lg">
           {name}
         </div>
       </div>
