@@ -19,7 +19,7 @@ const Card = ({project}) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay:  0.1 }}
             >
-            <div className="flex flex-col  md:flex-row  bg-white  dark:bg-transparent  overflow-hidden min-h-96 min-w-full md:w-3/4 mx-5 px-5">
+            <div className="flex flex-col  md:flex-row  bg-white  dark:bg-transparent  overflow-hidden min-h-96 sm:max-w-full lg:min-w-full md:min-w-full md:w-3/4 lg:mx-auto px-auto ">
 
                 {/* Left Side - Image Slider */}
                 <div className=" md:w-1/2 relative  mx-3 " >
@@ -45,7 +45,7 @@ const Card = ({project}) => {
                 </div>
 
                 {/* Right Side - Project Details */}
-                <div className="w-full md:w-1/2 p-6 ml-5 min-h-full flex flex-col  items-start justify-center ">
+                <div className="w-full md:w-1/2  ml-5 min-h-full flex flex-col  items-start justify-center ">
                     <h2 className="text-lg font-bold dark:text-secondary-dark  text-gray-800 mb-2">
                     {project.title}
                     </h2>
