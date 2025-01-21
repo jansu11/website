@@ -10,7 +10,7 @@ const Home = () => {
     <div className="max-w-full">
       {/* Hero Section */}
       <Section bgColor="" 
-          className=" min-w-full max-h-[80vh] bg-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
+          className=" min-w-full max-h-[80vh] bg-aliceblue-light dark:bg-transparent g-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
       >
 
 
@@ -18,7 +18,7 @@ const Home = () => {
         <div className="min-h-full flex flex-col  items-center justify-center max-w-4xl mx-auto my-4 py-3 text-center">
           <div className=''>
             <motion.h1 
-              className="text-4xl font-bold  dark:text-secondary-dark text-secondary-light mb-6"
+              className="text-4xl font-bold lg:text-5xl dark:text-secondary-dark text-primary-dark mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -28,7 +28,7 @@ const Home = () => {
 
           </div>
           <motion.p 
-            className="text-sm m-3 text-supporting1 dark:text-gray-300 text-primary-light"
+            className="text-sm lg:text-lg m-3 text-supporting1 dark:text-gray-300 text-primary-light"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -36,11 +36,11 @@ const Home = () => {
             Building scalable data solutions and transforming raw data into actionable insights
           </motion.p>
             <button
-            className="px-6 py-3 m-10  hover:bg-primary hover:text-secondary-dark
-             text-gray-200 font-semibold rounded-full bg-transparent border-4  border-btgold-dark shadow-lg transition-all duration-300"
+            className="px-6 py-3 m-10  hover:bg-gray-200 dark:border-0.5 hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
+            dark:hover:border-gray-900  text-primary-dark uppercase font-semibold rounded-full bg-transparent border-4 hover:border-2 hover:border-accent-dark border-aliceblue-light shadow-xl  transition-all duration-700"
             onClick={() => alert("Hello! Thanks for stopping by.")}
             >
-            Say Hi
+            Work Together
             </button>
 
         </div>
@@ -50,9 +50,9 @@ const Home = () => {
       {/* Projects Preview Section */}
 
            {/* Projects Preview Section */}
-      <Section bgColor="bg-gray-100 bg-transparent">
+      <Section bgColor="dark:bg-primary-dark bg-smokewhite-light ">
         <div className=" ">
-          <h2 className="text-3xl uppercase tracking-wider font-bold text-accent-light dark:text-white mb-8 text-center pb-16">
+          <h2 className="text-3xl uppercase tracking-wider  font-bold text-accent-light dark:text-white mb-6 text-center pb-">
             Featured Projects
           </h2>
           
@@ -80,9 +80,9 @@ const Home = () => {
       </Section>
 
       {/* Contact Preview Section */}
-      <Section bgColor="bg-primary-light dark:bg-primary-dark dark:from-gray-900 dark:to-gray-800 py-0 h-full">
+      <Section bgColor="bg-ghostwhite-light dark:bg-primary-dark dark:from-gray-900 dark:to-gray-800 py-0 h-full">
         <div className="min-w-full text-center  flex flex-col justify-between max-h-24 ">
-          <h2 className="text-3xl  font-bold text-gray-50 dark:text-white mb-8 justify-start   ">
+          <h2 className="text-3xl  font-bold text-primary-dark dark:text-white mb-8 justify-start   ">
             Contact me 
           </h2>
           <motion.div

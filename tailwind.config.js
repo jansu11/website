@@ -14,7 +14,10 @@ export default {
         accent: {light:'#212121',dark:'#1F2833'},
         supporting1: {dark:'#C5C6C7',light:""},
         supporting2: {dark:'#45A29E',light:""},
-        btgold: {dark:'#f7cd6f',light:""}
+        btgold: {dark:'#f7cd6f',light:""},
+        aliceblue:{light:"#f2f7fe",dark:""},
+        smokewhite:{light:"#f7f7f7",dark:""},
+        ghostwhite:{light:"#f9fafb"}
       },
       fontFamily:{
         neuropol: ['"Neuropol-Regular"','sans-serif'],
