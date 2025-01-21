@@ -21,7 +21,7 @@
     "title": "BlogNation",
     "tools": ["React", "Node.js", "MongoDB"],
     "description": "A blog Site",
-    "images": ["/images/project2-img1.jpg", "/images/project2-img2.jpg"],
+    "images": ["/images/blogNation/bnhome.png", "/images/blogNation/bnlogin.png"],
     "docsLink": "https://link-to-project-two-docs.com"
   }
 ]
