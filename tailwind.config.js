@@ -17,7 +17,8 @@ export default {
         btgold: {dark:'#f7cd6f',light:""},
         aliceblue:{light:"#f2f7fe",dark:""},
         smokewhite:{light:"#f7f7f7",dark:""},
-        ghostwhite:{light:"#f9fafb"}
+        ghostwhite:{light:"#f9fafb"},
+        blend:{dark:"#1E201E",light:"#2a292e"}
       },
       fontFamily:{
         neuropol: ['"Neuropol-Regular"','sans-serif'],

@@ -40,7 +40,7 @@ const Card = ({project}) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay:  0.1 }}
             >
-            <div className="flex flex-col  md:flex-row shadow-lg dark:shadow-gray-50 dark:drop-shadow-2xl border-b-2 dark:border-b-0 bg-white  dark:bg-transparent py-12 overflow-hidden min-h-96 sm:max-w-full lg:min-w-full md:min-w-full md:w-3/4 lg:mx-auto px-auto ">
+            <div className="flex flex-col  md:flex-row shadow-lg  dark:shadow-blend-dark dark:drop-shadow-2xl border-b-2 dark:border-b-0 bg-white  dark:bg-transparent py-12 overflow-hidden min-h-96 sm:max-w-full lg:min-w-full md:min-w-full md:w-3/4 lg:mx-auto px-auto ">
 
                 {/* Left Side - Image Slider */}
 

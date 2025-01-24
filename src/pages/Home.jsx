@@ -10,12 +10,12 @@ const Home = () => {
     <div className="max-w-full dark:pt-32">
       {/* Hero Section */}
       <Section bgColor="" 
-          className=" min-w-full max-h-[80vh] bg-aliceblue-light dark:bg-transparent g-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
+          className=" min-w-full max-h-[80vh] bg-aliceblue-light dark:bg-blend-dark g-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"
       >
 
 
 
-        <div className="min-h-full flex flex-col  items-center justify-center max-w-4xl mx-auto my-4 py-3 text-center">
+        <div className="min-h-full flex flex-col  items-center justify-center max-w-4xl mx-auto my-4 py-3 text-center ">
           <div className=''>
             <motion.h1 
               className="text-4xl font-bold lg:text-5xl dark:text-secondary-dark text-primary-dark mb-6"
