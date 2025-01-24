@@ -18,7 +18,13 @@ export default {
         aliceblue:{light:"#f2f7fe",dark:""},
         smokewhite:{light:"#f7f7f7",dark:""},
         ghostwhite:{light:"#f9fafb"},
-        blend:{dark:"#1E201E",light:"#2a292e"}
+        blend:{dark:"#1E201E",light:"#2a292e"},
+        header:{dark:"#ffc107", light:""},
+        subheader:{dark:"#5ec4cc",light:""},
+        button:{dark:"#0277bd"},
+        textbody:{dark:"#e0e0e0"},
+        texthigh1:{dark:'#ffd54f'},
+        texthigh2:{dark:'#80deea'}
       },
       fontFamily:{
         neuropol: ['"Neuropol-Regular"','sans-serif'],

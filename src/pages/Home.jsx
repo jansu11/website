@@ -18,7 +18,7 @@ const Home = () => {
         <div className="min-h-full flex flex-col  items-center justify-center max-w-4xl mx-auto my-4 py-3 text-center ">
           <div className=''>
             <motion.h1 
-              className="text-4xl font-bold lg:text-5xl dark:text-secondary-dark text-primary-dark mb-6"
+              className="text-4xl font-bold lg:text-5xl dark:text-subheader-dark text-primary-dark mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -28,7 +28,7 @@ const Home = () => {
 
           </div>
           <motion.p 
-            className="text-sm lg:text-lg m-3 text-supporting1 dark:text-gray-300 text-primary-light"
+            className="text-sm lg:text-lg m-3 text-supporting1 dark:text-textbody-dark text-primary-light"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -52,7 +52,7 @@ const Home = () => {
            {/* Projects Preview Section */}
       <Section bgColor="dark:bg-primary-dark bg-smokewhite-light ">
         <div className=" ">
-          <h2 className="text-3xl uppercase tracking-wider  font-bold text-accent-light dark:text-white mb-6 text-center pb-">
+          <h2 className="text-3xl uppercase tracking-wider  font-bold text-accent-light dark:text-header-dark mb-6 text-center pb-">
             Featured Projects
           </h2>
           
@@ -63,7 +63,7 @@ const Home = () => {
       {/* Skills Section */}
       <Section bgColor="bg-transparent dark:bg-primary-dark ">
         <div className="lg:w-3/5 mx-auto mb-10 pb-10">
-          <h2 className="text-3xl font-bold text-accent-light dark:text-white mb-16 text-center">
+          <h2 className="text-3xl font-bold text-accent-light dark:text-header-dark mb-16 text-center">
             Technical Skills
           </h2>
             <motion.div 

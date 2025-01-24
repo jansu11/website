@@ -89,10 +89,10 @@ const Card = ({project}) => {
 
                 {/* Right Side - Project Details */}
                 <div className="w-full md:w-1/2  ml-5 min-h-full flex flex-col  items-start justify-center mt-16 ">
-                    <h2 className="text-lg lg:text-2xl font-bold dark:text-secondary-dark  text-gray-800 mb-5">
+                    <h2 className="text-lg lg:text-2xl font-bold dark:text-subheader-dark  text-gray-800 mb-5">
                     {project.title}
                     </h2>
-                    <p className="dark:text-gray-300 text-primary-light text-sm lg:text-lg mb-4 pb-2 w-3/4 ">
+                    <p className="dark:text-textbody-dark text-primary-light text-sm lg:text-lg mb-4 pb-2 w-3/4 ">
                     {project.description}
                     </p>
                     <p className="dark:text-gray-300 text-gray-900  text-left text-sm pb-4 ">
@@ -100,7 +100,7 @@ const Card = ({project}) => {
                         <div className='flex  min-w-full '>
                         {
                             project.tools.map((tech) => (
-                                <div key={tech} className=' text-gray-900 dark:text-btgold-dark p-4 '>
+                                <div key={tech} className=' text-gray-900 dark:text-header-dark p-4 '>
                                     <TechLogo name={tech} className=' h-6 w-6 hover:h-10 hover:w-10 transition-all duration-300'/>
 
                                 </div>
@@ -114,7 +114,11 @@ const Card = ({project}) => {
                     href={project.docsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block align-center px-4 py-2  bg-transparent border-2 border-gray-900 dark:border-btgold-dark dark:text-white text-sm  rounded-full shadow hover:bg-gray-500 hover:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-btgold-dark hover:border-2  dark:hover:border-gray-300 transition-colors duration-300"
+                    className="inline-block align-center px-4 py-2 
+                     dark:bg-button-dark bg-transparent border-0 border-gray-900
+                      dark:border-btgold-dark dark:text-white text-sm  rounded-md shadow-md hover:bg-gray-500
+                       hover:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-btgold-dark hover:border-2  dark:hover:border-gray-300 
+                       transition-colors duration-700"
                     >
                         View Details
                     </a>

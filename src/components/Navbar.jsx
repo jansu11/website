@@ -74,7 +74,7 @@ const navigation = [
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-around align-middle h-20">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold dark:text-btgold-dark text-accent-light">
+            <Link to="/" className="text-2xl font-bold dark:text-header-dark text-accent-light">
               SUJAN BOHORA
             </Link>
           </div>
@@ -125,7 +125,7 @@ const navigation = [
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center space-x-3 px-4 py-3 dark:text-secondary-dark text-accent-light hover:bg-gray-800 
+                  className="flex items-center space-x-3 px-4 py-3 dark:text-subheader-dark text-accent-light hover:bg-gray-800 
                   hover:text-gray-300 dark:hover:bg-gray-700 rounded-lg transition-all duration-300 " 
                 >
                   <Icon className="w-5 h-5" />
