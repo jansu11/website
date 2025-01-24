@@ -1,7 +1,8 @@
 import { div } from 'framer-motion/client'
 import { FaPython, FaReact, FaNodeJs, FaGithub, FaDatabase , FaDocker,FaLinkedin } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiTailwindcss, SiMongodb,SiGmail ,SiPostgresql,SiApachespark,SiApachecassandra , SiApachekafka, SiScala} from 'react-icons/si'
+import {SiApachehadoop,SiPlotly, SiJupyter,SiJavascript, SiTypescript, SiTailwindcss, SiMongodb,SiGmail ,SiPostgresql,SiApachespark,SiApachecassandra , SiApachekafka, SiScala} from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
+import { TbSql } from "react-icons/tb";
 
 // Icon mapping object
 const techIcons = {
@@ -22,7 +23,12 @@ const techIcons = {
   'Kafka' : SiApachekafka,
   'Scala' : SiScala,
   'LinkedIn' : FaLinkedin, 
-  'Email' :  SiGmail
+  'Email' :  SiGmail,
+  'Hadoop' : SiApachehadoop,
+  'SQL' : TbSql,
+  'Notebook' : SiJupyter,
+  'Plotly' : SiPlotly
+
 
 }
 

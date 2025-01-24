@@ -1,38 +1,21 @@
 [
   {
     "title": "Web Development",
-    "experience": "2+ Years",
+    "experience": "Intermediate",
     "description": "Full-stack web development with modern technologies",
-    "technologies": ["React", "TypeScript", "Node.js", "MongoDB", "TailwindCSS"]
+    "technologies": ["React", "JavaScript", "Node.js", "MongoDB", "TailwindCSS"]
   },
   {
-    "title": "Frontend Development",
-    "experience": "3+ Years",
+    "title": "Data Analysis",
+    "experience": "Beginner",
+    "description": "",
+    "technologies": ["Python", "SQL", "Plotly", "Notebook" ]
+    
+  },
+  {
+    "title": "Data Engineering",
+    "experience": "Beginner",
     "description": "Creating responsive and interactive user interfaces",
-    "technologies": ["React", "Next.js", "TailwindCSS", "TypeScript"]
-  },
-  {
-    "title": "Web Development",
-    "experience": "2+ Years",
-    "description": "Full-stack web development with modern technologies",
-    "technologies": ["React", "TypeScript", "Node.js", "MongoDB", "TailwindCSS"]
-  },
-  {
-    "title": "Frontend Development",
-    "experience": "3+ Years",
-    "description": "Creating responsive and interactive user interfaces",
-    "technologies": ["React", "Next.js", "TailwindCSS", "TypeScript"]
-  },
-  {
-    "title": "Web Development",
-    "experience": "2+ Years",
-    "description": "Full-stack web development with modern technologies",
-    "technologies": ["React", "TypeScript", "Node.js", "MongoDB", "TailwindCSS"]
-  },
-  {
-    "title": "Frontend Development",
-    "experience": "3+ Years",
-    "description": "Creating responsive and interactive user interfaces",
-    "technologies": ["React", "Next.js", "TailwindCSS", "TypeScript"]
+    "technologies": ["Pyton", "Scala", "Spark", "Kafka", "Hadoop","PostgreSQL"]
   }
 ]

@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from "react";
 
 const SkillCard = ({skill }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   return (
     <div className="dark:bg-transparent rounded-lg shadow-md p-5 transition-all duration-300 hover:shadow-lg m-5 ">
