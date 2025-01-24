@@ -16,6 +16,6 @@
     "title": "Data Engineering",
     "experience": "Beginner",
     "description": "Creating responsive and interactive user interfaces",
-    "technologies": ["Pyton", "Scala", "Spark", "Kafka", "Hadoop","PostgreSQL"]
+    "technologies": ["Python", "Scala", "Spark", "Kafka", "Hadoop","PostgreSQL"]
   }
 ]
