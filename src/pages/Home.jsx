@@ -23,7 +23,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Data Engineer & Developer
+              Data Engineer | Developer 
           </motion.h1>
 
           </div>
@@ -52,7 +52,7 @@ const Home = () => {
            {/* Projects Preview Section */}
       <Section bgColor="dark:bg-primary-dark bg-smokewhite-light ">
         <div className=" ">
-          <h2 className="text-3xl uppercase tracking-wider  font-bold text-accent-light dark:text-header-dark mb-6 text-center pb-">
+          <h2 className="text-3xl uppercase tracking-wider  font-bold text-header-light dark:text-header-dark mb-6 text-center pb-">
             Featured Projects
           </h2>
           

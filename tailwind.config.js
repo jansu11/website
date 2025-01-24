@@ -21,9 +21,9 @@ export default {
         blend:{dark:"#1E201E",light:"#2a292e"},
         header:{dark:"#ffc107", light:""},
         subheader:{dark:"#5ec4cc",light:""},
-        button:{dark:"#0277bd"},
-        textbody:{dark:"#e0e0e0"},
-        texthigh1:{dark:'#ffd54f'},
+        button:{dark:"#03a9f4",light:""},
+        textbody:{dark:"#e0e0e0",light:""},
+        texthigh1:{dark:'#ffd54f',light:''},
         texthigh2:{dark:'#80deea'}
       },
       fontFamily:{
