@@ -1,8 +1,9 @@
+import Project from '../components/Project'
 
 const Projects = () => {
   return (
     <div>
-      this is projects
+      <Project/>
     </div>
     
   )
