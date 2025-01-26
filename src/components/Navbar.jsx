@@ -70,7 +70,7 @@ const navigation = [
 
 
   return (
-    <nav className="dark:fixed top-0 left-0 right-0 py-5   backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
+    <nav className=" py-5   backdrop-blur-xl shadow-lg z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-around align-middle h-20">
           <div className="flex items-center">

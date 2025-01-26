@@ -7,7 +7,7 @@ import TechLogo from '../components/TechLogo';
 const Home = () => {
 
   return (
-    <div className="max-w-full dark:pt-32">
+    <div className="max-w-full ">
       {/* Hero Section */}
       <Section bgColor="" 
           className=" min-w-full max-h-[80vh] bg-aliceblue-light dark:bg-blend-dark g-[url('/bg2.jpg')] bg-cover bg-center bg-no-repeat h-screen sm:bg-left-top md:bg-left-top mb-10 pb-10"

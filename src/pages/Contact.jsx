@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import TechLogo from '../components/TechLogo';
+import {useLocation} from "react-router-dom"
 
 const Contact = () => {
+  const location = useLocation();
+  const message = location.state?.message || "";
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: message,
   });
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({

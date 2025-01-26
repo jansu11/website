@@ -1,9 +1,11 @@
 import {motion} from 'framer-motion' 
+
 import React, { useState } from 'react';
 import TechLogo from '../TechLogo';
 import { useSwipeable } from 'react-swipeable';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { Link } from 'react-router-dom';
 
 const Card = ({project}) => {
 
@@ -110,9 +112,8 @@ const Card = ({project}) => {
 
                         </div>
                     </p>
-                    <a
-                    href={project.docsLink}
-                    target="_blank"
+                    <Link
+                    to={`/projects/${project.id}`}
                     rel="noopener noreferrer"
                     className="inline-block align-center px-4 py-2 
                      dark:bg-button-dark bg-transparent border-0 border-gray-900
@@ -121,7 +122,7 @@ const Card = ({project}) => {
                        transition-colors duration-700"
                     >
                         View Details
-                    </a>
+                    </Link>
                 </div>
             </div>
 
