@@ -29,6 +29,47 @@
  
    },
 
+   {
+    "id" : 2,
+    "title": "OrderViz",
+    "description": "A real-time data pipeline that scrapes order book data from a TMS website using Selenium, processes it using Apache Kafka and Apache Spark, stores it in Cassandra, and streams it to a React frontend through a WebSocket backend.",
+    "githubLink": "https://github.com/SuBOT11/TradeTrendAI" ,
+    "visit": false,
+    "request" : false,
+    "features": [
+        {
+          "title": "Real-Time Data Scraping",
+          "description": "Using Selenium with ChromeDriver to scrape order book data from a TMS website every second, sending it through a WebSocket in real time.",
+          "imagedark": "/images/projectdetail/orderviz/selenium.png"
+        },
+        {
+          "title": "Data Streaming with Kafka",
+          "description": "Data is passed from the Selenium WebSocket producer to two Kafka consumers (stock and indices data) for further processing.",
+          "imagedark": "/images/projectdetail/orderviz/kafka.png"
+        },
+        {
+          "title": "Data Aggregation with Apache Spark",
+          "description": "The stock data is aggregated using Apache Spark and stored in a Cassandra database for efficient querying and retrieval.",
+          "imagedark": "/images/projectdetail/orderviz/spark.png",
+          "imagelight": "/images/projectdetail/orderviz/spark-light.png"
+        },
+        {
+          "title": "Real-Time Data Delivery",
+          "description": "The final processed data is streamed to a React frontend via a WebSocket backend, allowing users to view live updates of the order book.",
+          "imagedark": "/images/projectdetail/orderviz/Frontend.png",
+          "imagelight": "/images/projectdetail/orderviz/websocket-react-light.png"
+        },
+        {
+          "title": "Containerization with Docker",
+          "description": "All components are containerized using Docker, ensuring portability and ease of deployment across environments.",
+          "imagedark": "/images/projectdetail/orderviz/docker-dark.png",
+          "imagelight": "/images/projectdetail/orderviz/docker-light.png"
+        }
+      ] 
+  },
+
+
+
   
    {
     "id" : 3,

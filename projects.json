@@ -12,7 +12,7 @@
     "title": "OrderBook Viz",
     "tools": ["Python", "Scala", "Spark","Kafka","Cassandra","Docker"],
     "description": "A realtime Order Book visualization of equity traded on NEPSE ",
-    "images": ["/images/project2-img1.jpg", "/images/project2-img2.jpg"],
+    "images": ["/images/orderViz/selenium.png", "/images/orderViz/kafka.png"],
     "docsLink": "https://link-to-project-two-docs.com"
   },
 
