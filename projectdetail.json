@@ -1,0 +1,62 @@
+[
+   {
+    "id" : 1,
+    "title": "TradeTrendAI",
+    "description": "Using LSTM model we build a website that can predict trend of 150+ equities publicly traded on Nepal Stock Exchange. ",
+    "githubLink": "https://github.com/SuBOT11/TradeTrendAI" ,
+    "visit" : null,
+    "request" : true ,
+    "features": [
+      {
+        "title": "Intuitive Dashboard",
+        "description": "Interactive Dashboard to display the historic and predicted prices with easy to use interface.",
+        "imagedark": "/images/projectdetail/tradetrend/dashboard-dark.png",
+        "imagelight": "/images/projectdetail/tradetrend/dashboard-light.png"
+
+      },
+      {
+        "title": "Real Data",
+        "description": "Financial, Broker , historic CandleStick Data were used to train the LSTM Model.",
+        "imagedark": "/images/projectdetail/tradetrend/historic-data.png"
+      },
+      {
+        "title": "Fundamental and Technical Metrics",
+        "description": "Availability of important fundamental and technical metrics.",
+        "imagedark": "/images/projectdetail/tradetrend/indicator-dark.png",
+        "imagelight": "/images/projectdetail/tradetrend/indicators-light.png"
+      }
+    ]
+ 
+   },
+
+  
+   {
+    "id" : 3,
+    "title": "BlogNation",
+    "description": "A blog platform where you can signup as an author and express your views on any topic.",
+    "githubLink": "https://github.com/SuBOT11/TradeTrendAI" ,
+    "visit":"https://blognation-y60h.onrender.com/",
+    "request" : false,
+    "features": [
+    {
+      "title": "Rich Text Editing",
+      "description": "Create and format blog posts with ease using an intuitive Quill-based editor.",
+      "imagedark": "/images/projectdetail/blognation/texteditor.png",
+      "imagelight": "/images/blognation/texteditor.png"
+    },
+    {
+      "title": "Post Interaction",
+      "description": "Users can view, comment on, and interact with blog posts, fostering a vibrant community.",
+      "imagedark": "/images/projectdetail/blognation/interact.png",
+      "imagelight": "/images/blognation/interact.png"
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Optimized for all devices, providing a smooth user experience on desktops, tablets, and smartphones.",
+      "imagedark": "/images/projectdetail/blognation/responsive.png",
+      "imagelight": "/images/blognation/responsive.png"
+    }
+  ]
+ 
+  }
+]
