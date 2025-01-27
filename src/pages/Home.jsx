@@ -5,6 +5,10 @@ import Project from '../components/Project'
 import SkillsSection from '../components/SkillsSection';
 import TechLogo from '../components/TechLogo';
 import {Link} from 'react-router-dom'
+import TypingAnimation from '../components/Animation/TypingAnimation'
+import AnimatedMessages from '../components/Animation/AnimateMessages';
+import SlideFadeText from '../components/Animation/SlideFadeText';
+
 const Home = () => {
 
   return (
@@ -17,33 +21,15 @@ const Home = () => {
 
 
         <div className="min-h-full flex flex-col w-[70vw] items-center justify-center  mx-auto my-4 py-3 text-center ">
-          <div className=''>
-            <motion.h1 
-              className="text-2xl  md:text-4xl font-bold lg:text-5xl dark:text-subheader-dark text-primary-dark mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-               Full Stack Websites | Anything Data
-          </motion.h1>
-
-          </div>
-          <motion.p 
-            className="text-xs md:text-lg lg:text-lg m-3  text-supporting1 dark:text-textbody-dark text-primary-light"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-           If you are looking for a developer who can help with MERN projects or if you are hiring for 
-           data positions in data engineering and data analytics, press the button below 
-          </motion.p>
+          <TypingAnimation/>
+          <SlideFadeText/>
             <button
-            className="px-3 py-2 m-10  hover:bg-gray-200 dark:border hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
+            className="px-6 py-4 mt-3  hover:bg-gray-200 dark:border hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
             dark:hover:border-gray-900  text-primary-dark uppercase font-semibold rounded-full bg-transparent border-4 hover:border-2 hover:border-accent-dark border-aliceblue-light shadow-xl  transition-all duration-700"
             >
               <Link to={'/contact'}>
 
-                Get in Touch
+                <span className='text-xs md:text-lg'>Get in Touch</span>
               </Link>
 
             </button>
