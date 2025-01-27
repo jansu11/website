@@ -22,7 +22,7 @@ const ProjectDetail = () => {
   const project = projects.find((pro) => pro.id === pid);
 
   if (!project) {
-    return <div className="p-6 text-red-500">Project not found</div>;
+    return <div className="p-6 text-red-500"></div>;
   }
 
   const handleRequest = (message) => {
