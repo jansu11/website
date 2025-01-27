@@ -62,7 +62,7 @@
         {
           "title": "Containerization with Docker",
           "description": "All components are containerized using Docker, ensuring portability and ease of deployment across environments.",
-          "imagedark": "/images/projectdetail/orderviz/docker-dark.png",
+          "imagedark": "/images/projectdetail/orderviz/docker.png",
           "imagelight": "/images/projectdetail/orderviz/docker-light.png"
         }
       ] 
@@ -75,7 +75,7 @@
     "id" : 3,
     "title": "BlogNation",
     "description": "A blog platform where you can signup as an author and express your views on any topic.",
-    "githubLink": "https://github.com/SuBOT11/TradeTrendAI" ,
+    "githubLink": "https://github.com/jansu11/BlogNation" ,
     "visit":"https://blognation-y60h.onrender.com/",
     "request" : false,
     "features": [
