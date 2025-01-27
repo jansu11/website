@@ -55,12 +55,6 @@ const navigation = [
       tooltip: 'Skills'
     },
     { 
-      name: 'Experience', 
-      href: '/experience', 
-      icon: Briefcase,
-      tooltip: 'Experience'
-    },
-    { 
       name: 'Contact', 
       href: '/contact', 
       icon: Mail,
