@@ -24,7 +24,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Data | Design | Develop
+              Data &  Design
           </motion.h1>
 
           </div>
@@ -34,7 +34,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            "I love working with data tools to build systems that make processing scalable, efficient, and effortless."
+            I love working with data tools to build data systems that make processing scalable, efficient and visually pleasing.
           </motion.p>
             <button
             className="px-6 py-3 m-10  hover:bg-gray-200 dark:border-0.5 hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
