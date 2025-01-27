@@ -2,20 +2,20 @@
   {
     "title": "Web Development",
     "experience": "Intermediate",
-    "description": "Full-stack web development with modern technologies",
+    "description": "I have developed several modern websites with MERN stack. I have deployed full stack websites using tools like Github Action.",
     "technologies": ["React", "JavaScript", "Node.js", "MongoDB", "TailwindCSS"]
   },
   {
     "title": "Data Analysis",
     "experience": "Beginner",
-    "description": "Actionable insights from complex datasets, leveraging statistical techniques and visualization to drive informed decision-making.",
+    "description": "I have basic understanding of statistics. I have worked with data analysis tool to carve out actionable insights and present it in dashboard and graphs.",
     "technologies": ["Python", "SQL", "Plotly", "Notebook" ]
     
   },
   {
     "title": "Data Engineering",
     "experience": "Beginner",
-    "description": "Design and optimize robust data pipelines and storage systems to ensure seamless data flow, scalability, and reliability for analytics. ",
+    "description": "In few projects i have done, it needed ETL tools to clean , aggregate data from various sources. I have basic knowledge about apache big data tools , data warehouses and databases.",
     "technologies": ["Python", "Scala", "Spark", "Kafka", "Hadoop","PostgreSQL"]
   }
 ]
