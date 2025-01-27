@@ -45,11 +45,22 @@ const Contact = () => {
             <div>
               <div className="flex items-center mb-8">
                 <TechLogo  className= 'text-gray-100 h-8 w-8' name={'Email'}></TechLogo>
-                <span className='ml-4'>bohorasujan3@gmail.com</span>
+
+                <a
+                  href="mailto:bohorasujan3@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20there,%20I%20would%20like%20to%20connect%20with%20you." 
+                  className="hover:text-gray-300 dark:text-header-dark transition-colors"
+                  aria-label="Email"
+                >
+
+                <span 
+                
+                className='ml-4'>
+                bohorasujan3@gmail.com</span>
+                </a>
               </div>
               <div className="flex items-center mb-8">
                 <TechLogo className= 'text-gray-100 h-8 w-8' name={'Phone'}></TechLogo>
-                <span className='ml-4'>+977 (555) 9800817476</span>
+                <span className='ml-4'>+977 9800817476</span>
               </div>
               <div className="flex items-center mb-8">
                 <TechLogo  className= 'text-gray-100 h-8 w-8' name={'Mappin'}></TechLogo>
@@ -58,14 +69,14 @@ const Contact = () => {
 
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://github.com/jansu11" 
                   className="hover:text-gray-300 dark:text-header-dark transition-colors"
                   aria-label="GitHub Profile"
                 >
                     <TechLogo className='h-8 w-8 hover:scale-150 transition-all duration-300' name={'GitHub'}></TechLogo>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/bohorasujan/" 
                   className="hover:text-gray-300  dark:text-header-dark transition-colors "
                   aria-label="LinkedIn Profile"
                 >

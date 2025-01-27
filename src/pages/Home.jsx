@@ -4,6 +4,7 @@ import Section from '../components/Section';
 import Project from '../components/Project'
 import SkillsSection from '../components/SkillsSection';
 import TechLogo from '../components/TechLogo';
+import {Link} from 'react-router-dom'
 const Home = () => {
 
   return (
@@ -23,7 +24,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Data Engineer | Developer 
+              Data | Design | Develop
           </motion.h1>
 
           </div>
@@ -33,14 +34,17 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Building scalable data solutions and transforming raw data into actionable insights
+            "I love working with data tools to build systems that make processing scalable, efficient, and effortless."
           </motion.p>
             <button
             className="px-6 py-3 m-10  hover:bg-gray-200 dark:border-0.5 hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
             dark:hover:border-gray-900  text-primary-dark uppercase font-semibold rounded-full bg-transparent border-4 hover:border-2 hover:border-accent-dark border-aliceblue-light shadow-xl  transition-all duration-700"
-            onClick={() => alert("Hello! Thanks for stopping by.")}
             >
-            Work Together
+              <Link to={'/contact'}>
+
+                Get in Touch
+              </Link>
+
             </button>
 
         </div>
@@ -92,19 +96,21 @@ const Home = () => {
           >
             
             <a
-              href="#contact"
+              href="https://github.com/jansu11"
+              target='_blank'
               className="dark:text-btgold-dark dark:hover:text-white  hover:text-white text-gray-900 transition-all mx-5 px-5"
             >
               <TechLogo key={'github'} name={'GitHub'} className='h-8 w-8 hover:h-12 hover:w-12 transition-all duration-300'></TechLogo>
             </a>
             <a
-              href="#contact"
+              href="https://www.linkedin.com/in/bohorasujan/"
+              target='_blank'
               className="dark:text-btgold-dark dark:hover:text-white hover:text-white text-gray-900 transition-all mx-5 px-5"
             >
               <TechLogo key={'linkedIn'} name={'LinkedIn'} className='h-8 w-8 hover:h-12 hover:w-12 transition-all duration-300'></TechLogo>
             </a>
             <a
-              href="#contact"
+              href="mailto:bohorasujan3@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20there,%20I%20would%20like%20to%20connect%20with%20you."
               className="dark:text-btgold-dark dark:hover:text-white hover:text-white text-gray-900 transition-all mx-5 px-5"
             >
               <TechLogo key={'gmail'} name={'Email'} className='h-8 w-8 hover:h-12 hover:w-12 transition-all duration-300'></TechLogo>

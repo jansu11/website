@@ -40,7 +40,7 @@ const ProjectDetail = () => {
               {project.title}
             </h1>
             <div>
-              <p className="w-3/4 mx-auto text-lg md:text-2xl dark:text-gray-300 text-gray-800 text-center md:text-left">
+              <p className="w-3/4 mx-auto text-lg md:text-2xl dark:text-gray-300 text-gray-800 text-justify md:text-left">
                 {project.description}
               </p>
 
@@ -97,7 +97,7 @@ const ProjectDetail = () => {
                 <h3 className="text-xl md:text-3xl font-bold mb-4 text-center md:text-left dark:text-subheader-dark text-gray-800">
                   {feature.title}
                 </h3>
-                <p className="text-base md:text-lg dark:text-smokewhite-light text-gray-800 text-center md:text-left">
+                <p className="text-base md:text-lg dark:text-smokewhite-light text-gray-800 text-justify md:text-left md:pr-16">
                   {feature.description}
                 </p>
               </div>
