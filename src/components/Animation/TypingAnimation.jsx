@@ -6,7 +6,7 @@ const TypingAnimation = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const phrases = ["build", "prepare", "automate", " scrape"];
+  const phrases = ["build...", "prepare.", "automate", " scrape.."];
 
   useEffect(() => {
     let timeout;
@@ -20,14 +20,14 @@ const TypingAnimation = () => {
       } else {
         timeout = setTimeout(() => {
           setIsTyping(false);
-        }, 1200);
+        }, 1000);
       }
     } else {
       if (currentIndex > 0) {
         timeout = setTimeout(() => {
           setText((prev) => prev.slice(0, -1));
           setCurrentIndex((prev) => prev - 1);
-        }, 50);
+        }, 100);
       } else {
         setIsTyping(true);
         setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
@@ -41,8 +41,8 @@ const TypingAnimation = () => {
     <div className="h-10 flex items-center justify-center bg-transparent dark:bg-transparent">
       <div className="flex items-center space-x-2 ">
         {/* Fixed "I will" Text */}
-        <p className="text-2xl md:text-3xl uppercase font-bold text-gray-700 dark:text-gray-50 mb-1">
-          I will
+        <p className=" pl-4 text-2xl md:text-3xl uppercase font-bold text-gray-400 dark:text-gray-50 mb-1">
+          I can
         </p>
 
         {/* Typing Animation */}

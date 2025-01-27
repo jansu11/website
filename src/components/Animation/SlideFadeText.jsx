@@ -21,9 +21,9 @@ const SlideFadeText = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
         // Trigger slide up and fade in
         setIsVisible(true);
-      }, 200); // This should match the duration of the fade-out transition
+      }, 300); // This should match the duration of the fade-out transition
       
-    }, 2100); // Change text every 3 seconds
+    }, 3000); // Change text every 3 seconds
 
     return () => clearInterval(intervalId);
   }, []);
@@ -44,7 +44,7 @@ const SlideFadeText = () => {
             }
           `}
         >
-          <h2 className="flex items-center justify-center text-lg uppercase md:text-3xl dark:text-gray-300 font-semibold text-gray-800">
+          <h2 className="flex items-center justify-center text-lg uppercase md:text-3xl dark:text-subheader-dark font-semibold text-blue-400">
             {texts[currentIndex]}
           </h2>
         </div>

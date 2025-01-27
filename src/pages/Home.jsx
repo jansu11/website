@@ -21,10 +21,13 @@ const Home = () => {
 
 
         <div className="min-h-full flex flex-col w-[70vw] items-center justify-center  mx-auto my-4 py-3 text-center ">
+          <div className='mb-8'>
+            <h1 className='text-lg'>👋 I AM Sujan.</h1>
+          </div>
           <TypingAnimation/>
           <SlideFadeText/>
             <button
-            className="px-6 py-4 mt-3  hover:bg-gray-200 dark:border hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
+            className="px-6 py-4 mt-  hover:bg-gray-200 dark:border hover:scale-110 dark:text-gray-50 dark:hover:text-gray-900 dark:hover:gray-600 
             dark:hover:border-gray-900  text-primary-dark uppercase font-semibold rounded-full bg-transparent border-4 hover:border-2 hover:border-accent-dark border-aliceblue-light shadow-xl  transition-all duration-700"
             >
               <Link to={'/contact'}>
