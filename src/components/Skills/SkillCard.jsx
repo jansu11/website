@@ -10,8 +10,8 @@ const SkillCard = ({skill }) => {
       {/* Header Section */}
       <div className="flex items-start justify-between">
         <div className="mx-2 px-2">
-          <h3 className="text-lg lg:text-xl font-bold dark:text-subheader-dark">{skill.title}</h3>
-          <p className="lg:text-lg dark:text-textbody-dark mt-4 pt-4">{skill.experience}</p>
+          <h3 className="text-lg lg:text-xl font-bold text-orange-400 uppercase tracking-wide  dark:text-subheader-dark">{skill.title}</h3>
+          <p className=" tracking-wide dark:text-textbody-dark mt-2 pt-">{skill.experience}</p>
         </div>
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
