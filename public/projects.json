@@ -1,4 +1,14 @@
-[
+[  
+  {
+    "id": 1,
+    "title": "TRACKMYFOLIO",
+    "tools": ["Next.js", "Typescript", "Node.js","MongoDB","Python","Kafka"],
+    "description": "Track the real time Profit/Loss, Market Value of your portfolio.",
+    "images": ["/images/trackFolio/dash.png", "/images/trackFolio/data.png","/images/trackFolio/light.png"],
+    "docsLink": "https://link-to-project-one-docs.com"
+
+  },
+
   {
     "id": 1,
     "title": "TRADETREND AI",

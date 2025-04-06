@@ -1,7 +1,8 @@
 import { div } from 'framer-motion/client'
 import {FaPhoneAlt,FaPython, FaReact, FaNodeJs, FaGithub, FaDatabase , FaDocker,FaLinkedin } from 'react-icons/fa'
-import {SiApachehadoop,SiPlotly, SiJupyter,SiJavascript, SiTypescript, SiTailwindcss, SiMongodb,SiGmail ,SiPostgresql,SiApachespark,SiApachecassandra , SiApachekafka, SiScala} from 'react-icons/si'
+import {SiTypescript,SiApachehadoop,SiPlotly ,SiJupyter,SiJavascript, SiTailwindcss, SiMongodb,SiGmail ,SiPostgresql,SiApachespark,SiApachecassandra , SiApachekafka, SiScala} from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
+import { TbBrandTypescript } from "react-icons/tb";
 import { TbSql } from "react-icons/tb";
 import { FiMapPin } from "react-icons/fi";
 
@@ -30,7 +31,8 @@ const techIcons = {
   'Notebook' : SiJupyter,
   'Plotly' : SiPlotly,
   'Phone' :  FaPhoneAlt,
-  'Mappin' : FiMapPin 
+  'Mappin' : FiMapPin,
+  'Typescript': TbBrandTypescript 
 
 
 }
